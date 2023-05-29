@@ -1,9 +1,12 @@
+html,
 body {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
-    display: inline-block;
     align-items: center;
     justify-content: center;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -12,8 +15,8 @@ body {
 .container {
 
     background-color: #e2aa56;
-    display: inline-flex;
-    flex-flow: row wrap;
+    display: flex;
+    flex-flow: column wrap;
     border: 1px solid black;
     margin: 0 auto;
     text-align: center;
@@ -23,6 +26,10 @@ body {
 
 }
 
+.navbar-custom {
+    background-color: #007bff;
+}
+
 .jumbotron {
     margin-top: 4%;
     padding: 5%;
@@ -30,6 +37,15 @@ body {
     color: #ffffff;
     border: solid 2px black
 }
+
+
+.digimon-box {
+
+    display: flex;
+}
+
+
+
 
 #digimon-table-container {
     max-height: 400px;
@@ -73,11 +89,31 @@ th td {
     font-style: italic;
 }
 
-.intro {
+.jumbotron {
     margin-top: 4%;
     padding: 3%;
     background-color: #007bff;
     color: #ffffff;
     font-size: larger;
-    border: solid 2px black
+    border: solid 2px black;
+    text-align: center;
+
+}
+
+#error-message {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 20px;
+}
+
+#error-message h1 {
+    font-size: 24px;
+}
+
+#error-message p {
+    font-size: 18px;
 }

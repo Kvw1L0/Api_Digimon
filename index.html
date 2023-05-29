@@ -10,21 +10,54 @@
 
 <body>
 
-    <div class="container">
-        <h1 class="jumbotron">THE DIGIVICE</h1>
-        <p class="intro">Bienvenidos. Aca podras encontrar la informacion basica de todos tus digimon favortitos !!.Haz
-            click en
-            algunos de los digimon de la lista :</p>
 
-        <div id="digimon-table-container">
-            <table id="digimon-table" class="table table-success table-striped">
-                <tbody></tbody>
-            </table>
-        </div>
-        <div id="digimon-details">
-            <img id="digimon-image" src="">
-            <h2 id="digimon-name"></h2>
-            <p id="digimon-level"></p>
+    <div id="error-message">
+        <h1>Opppp!....La pantalla es demasiado pequeña</h1>
+        <p>Por favor, amplía la pantalla para ver el contenido.</p>
+    </div>
+
+    <div id="main_container" class="container-md container">
+        <h1 class="jumbotron">THE DIGIVICE</h1>
+        <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bienvenidos!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Historia Digimundo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Manga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ">DigiShop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <p class="jumbotron">Aca podras encontrar la informacion basica de todos tus digimon favoritos
+            !!.Haz
+            click en algunos de los digimon de la lista :</p>
+
+        <div class="digimon-box container-md">
+            <div id="digimon-table-container">
+                <table id="digimon-table" class="table table-success table-striped">
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="digimon-details">
+                <img id="digimon-image" src="">
+                <h2 id="digimon-name"></h2>
+                <p id="digimon-level"></p>
+            </div>
         </div>
     </div>
 
